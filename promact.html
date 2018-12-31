@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Promact</title>
+  <meta charset="utf-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href ="animate.css" rel ="stylesheet"  />
+<link href ="style.css" rel ="stylesheet" type ="text/css" />
+<script>
+
+function onclickmethod(){
+ var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+if(document.getElementById("fullName").value=="" && document.getElementById("emailAddress").value=="" && document.getElementById("comment").value=="" && reg.test(document.getElementById("emailAddress").value) == false)
+{
+
+document.getElementById("Button").disabled = true;
+
+}
+else if(document.getElementById("fullName").value!="" && document.getElementById("emailAddress").value!="" && document.getElementById("comment").value!=""&& reg.test(document.getElementById("emailAddress").value) == true)
+{
+alert('Full Name:'+document.getElementById("fullName").value +"\n"+ 'Email Id :' + document.getElementById("emailAddress").value +"\n"+ 'Message:'+document.getElementById("comment").value);
+ document.myForm.reset();
+}
+
+}
+
+</script>
+  </head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class ="container">
+
+        <div class="navbar-brand" >
+            <div class="brand-logo">
+                <a href="#" class="logo"></a>
+            </div>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+            <ul class="nav navbar-nav  ml-auto ">
+                <li class="nav-item" >
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="#touch">Get In Touch</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+            </ul>
+       </div>
+     </div> 
+</nav>
+
+    <section id="home" class ="home-container">    
+          <div class="text-heading">
+            <h1 class="animated fadeInUp" data-animation="fadeInUp" data-delay="0">
+             Do not wait — <span class="highlight">launch</span> your startup now!</h1>
+            <p class="text-bold">Promact: Startup IT Services Specialist</p>
+            <p> We have a unique expertise in dealing with startups and managing stacks.</p>
+          </div>
+
+            <div class="down-arrow animated bounce infinite">
+                <a href="#touch" class="top-to-down  animated bounce infinite">
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+            </div>    
+    </section>
+
+    <section id="touch" class ="contact-container">   
+        <div class="touch-header"> 
+            <h1>Get In Touch</h1>   
+            <p> Please let us know what you are looking for and we will contact you at the earliest </p>
+            <hr class="bottom-border">
+        </div>
+        <div class="container-blog">
+            <div class="row">
+                <div class="col-sm-12 col-lg-7">
+                    <div class = "post-container">
+                        <form name="myForm">
+                            <div class="form_container">
+                                <div class="form-group">         
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                                </div>
+                                <div class="form-group">      
+                                    <input type="email"  class="form-control" id="emailAddress" placeholder="Enter email">
+                                </div>	
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="4" id="comment" placeholder="Message"></textarea>
+                                </div>	
+                                <button type="button" id="Button"  onclick="onclickmethod()"class="btn" >Submit</button>
+                           </div>
+                        </form>
+                    </div>
+                </div>
+            <div class="sidebar col-sm-12 col-lg-5">
+                <img src="map.png"  alt="map" width="100%" height="100%" margin-right ="15px">
+            </div>
+            </div>
+          </div>   
+    </section>
+
+    <section id="about" class="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="footer-content row">
+                    <div class="col-sm-4">
+                        <h4>About</h4>
+                        <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>                        
+                    </div>
+                    
+                    <div class="col-sm-5 social-wrap">
+                        <h4>Social</h4>
+                        <div class="about-social animated flipInY" >
+
+                        <a href="https://www.facebook.com" class="social-box " >
+                            <i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com" class="social-box" >
+                            <i class="fa fa-twitter"></i></a>
+                        <a href="https://plus.google.com" class="social-box ">
+                            <i class="fa fa-google-plus pr-1"></i></a>
+                       <a href="https://linkedin.com" class="social-box " >
+                            <i class="fa fa-linkedin"></i></a>
+
+                   </div> 
+                    </div>
+                    
+                    <div class="col-sm-3">
+                    <h4>Contact us</h4>
+                    <ul class="list-unstyled">
+                    <li>
+                        info@promactinfo.com
+                    </li>
+                    <li>                    
+                        B-301, Monalisa Business Center, Near More Mega Store, Manjalpur, Vadodara, Gujarat,
+                        India -
+                        390011
+                    </li>
+                    <li>                    
+                        +91 - 992-503-6216
+                    </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">Copyright ©2018 Promact Infotech Pvt. Ltd. All Rights Reserved.</div>
+        </div>
+    </section>
+
+</body>
+</html>
