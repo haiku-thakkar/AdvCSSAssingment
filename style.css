@@ -32,8 +32,8 @@ max-height: 4000px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 1155px;
     position: relative;
+    height: 100vh;
 }
 .main-header
 {
@@ -49,6 +49,9 @@ min-height: 750px;
 	font-size: 4em;
 	font-weight: 300;
 }
+
+
+
 .nav-link
 {
 	margin-right:10px;
@@ -86,19 +89,23 @@ min-height: 750px;
 	padding: 0rem 0rem;
 }
 
+.navbar-dark .navbar-nav .nav-link {    
+    font-size: 18px;
+}
+
 .contact-container
 {
 	padding-bottom: 23px;
-/*	position: relative;*/
 	background-color: #efefef;
 }
 .touch-header{
 
 text-align: center;
 }
+
 .down-arrow {
     display: block;
-    position: absolute;
+/*    position: absolute;*/
     width: 100%;
 	bottom: 20px;
     padding-top: 80px;
@@ -118,8 +125,7 @@ text-align: center;
     height: 50px;
 	border-radius: 50%;
     font-size: 19px;
-   margin-left:50%;
-   margin-right:50%;
+   margin:0 auto;
    display:block;
    padding:10px;
    -webkit-animation: bounce 4s 2s infinite;
@@ -134,10 +140,7 @@ border-color:#FBC213
 	color: rgba(255,255,255,.7);
  
 }
-#main
-{
-	margin: 50px;
-}
+
 .container-blog{
     max-width: 1140px;
 	font-weight: 300;
@@ -151,6 +154,7 @@ border-color:#FBC213
 .form_container
 {
 	margin-top:30px;
+    margin-bottom: 30px;
 }
 .btn
 {
@@ -221,7 +225,7 @@ color:black;
 .fa-facebook {
   
   color: white;
-   padding: 10px;
+   padding: 10px 14px;
   font-size: 20px;
   text-decoration: none;
   margin: 5px 2px;
@@ -266,9 +270,11 @@ color:black;
 	margin: 5px 10px;
 }
 
+.sidebar img{
+    box-shadow: 0 0 2px #a0a0a0;
+}
 
-
-.fa:hover {
+.fa-google-plus:hover,.fa-linkedin:hover,.fa-twitter:hover,.fa-facebook:hover {
     opacity: 0.7;
 	 color: #FBC213;
      border-color: #FBC213;
@@ -314,25 +320,57 @@ margin-bottom: 10px;
  
 }
 
+
+.form-control:focus {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+}
+
+@media only screen and (min-width: 770px) and (max-width:1024px) {
+     
+	.container-blog{
+        width:100%;
+        margin-left: 0px;
+    }
+    .contact-container {
+        min-height: 600px;
+    }
+    
+   
+}
+
 @media only screen and (max-width:768px) {
+   
 .container-blog{
 	width:100%;
 	margin-left: 0px;
-}
-#main {
-     margin: 0px;
-}
-}
-@media only screen and (min-width: 770px) and (max-width:1024px) {
-	.container-blog{
-	width:100%;
-	margin-left: 0px;
-}
-#main {
-     margin: 0px;
-}
-.contact-container {
-    min-height: 600px;
-}
+    }
+    
+    a.social-box{
+        margin: 5px -4px;
+    }
+    
+     .text-heading h1 {
+    font-size: 2.4em;
+    font-weight: 300;
+         margin-top: 85px;
+         margin-bottom: 20px
+    }
+    .text-heading p{
+        font-size: 1.1em;
+    }
+    .text-heading .text-bold {
+        font-size:  1.3em;
+    }
+    .home-container{
+       min-height: 360px;
+    }
+    
+    .touch-header h1{
+        padding-top: 10px;
+    }
 }
 
